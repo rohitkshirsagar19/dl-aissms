@@ -1,0 +1,45 @@
+base:
+  project: 'deep-learning'
+
+raw_data:
+  data-source: data_source
+
+load_data:
+  num_classes: 4
+  raw_data: data_source
+  preprocessed_data: data/processed
+  full_path:DEEP_LEARNING/data_source
+
+train:
+  split_ratio: 0.2
+
+model:
+  name: VGG19
+  trainable: False
+  train_path: data/processed/train
+  test_path: data/processed/test
+  image_size: [255,255]
+  loss: 'categorical_crossentropy'
+  optimizer: 'adam'
+  metrics: ['accuracy']
+  epochs: 1
+  #batch_size: 32
+  sav_dir: model/trained.h5
+
+img_augment:
+  rescale: 1./255
+  shear_range: 0.2
+  zoom_range: 0.2
+  horizontal_flip: True
+  vertical_flip: True
+  batch_size: 32
+  class_mode: 'categorical'
+
+model_dir: models
+
+mlflow_config:
+  artifact_dir: artifacts
+  experiment_name: 'Deep Learning_VGG19'
+  run_name: mlops
+  register_model_name: Deep_Learning_model
+  
