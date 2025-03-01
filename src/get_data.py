@@ -1,5 +1,5 @@
 from distutils.command.config import config
-import os
+import os 
 import requests
 import shutil
 import random
@@ -18,8 +18,8 @@ def read_params(config_file):
     return config
 
 
-if __name__=='__main__':
-    args=argparse.ArgumentParser()
+if __name__ == "__main__":
+    args = argparse.ArgumentParser()
     args.add_argument('--config',default='params.yaml')
-    passed_args=args.parse_args()
-    a = get_data(config_file=passed_args.config)    
+    pased_args=args.parse_args()
+    a  = get_data(config_file=pased_args.config)

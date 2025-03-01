@@ -2,6 +2,9 @@
 /data/
 .myenv/
 data_source/
+model/
+models/
+
 
 # Mac OS-specific storage files
 .DS_Store

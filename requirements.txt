@@ -1,5 +1,5 @@
 pandas
-numpy
+numpy 
 dvc
 keras
 scikit-learn
@@ -7,14 +7,6 @@ matplotlib
 seaborn
 tensorflow
 joblib
-PyYAML
-jupyter
-jupyterlab
-ipython
-ipykernel
-ipywidgets
-nbconvert
-nbformat
-notebook
-streamlit
-plotly
+PyYaml
+keras
+keras_preprocessing
