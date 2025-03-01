@@ -1,6 +1,20 @@
-black
-flake8
-isort
-pip
-python-dotenv
--e .
+pandas
+numpy
+dvc
+keras
+scikit-learn
+matplotlib
+seaborn
+tensorflow
+joblib
+PyYAML
+jupyter
+jupyterlab
+ipython
+ipykernel
+ipywidgets
+nbconvert
+nbformat
+notebook
+streamlit
+plotly
