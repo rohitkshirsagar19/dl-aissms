@@ -3,3 +3,14 @@ name: MRI
 on:
   push:
     branches: ["master"]
+
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v2
+          - name: Set up Python 3.11
+            uses: actions/setup-python@v3
+            with:
+              python-version: "3.11"
