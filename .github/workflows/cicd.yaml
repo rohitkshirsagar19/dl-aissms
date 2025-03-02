@@ -1,0 +1,5 @@
+name: MRI
+
+on:
+  push:
+    branches: ["master"]
