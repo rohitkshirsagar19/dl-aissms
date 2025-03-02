@@ -13,7 +13,7 @@ train:
   split_ratio: 0.80
 
 model:
-  name: VGG19
+  name: CNN
   trainable: True
   train_path: data/processed/train
   test_path: data/processed/test
@@ -21,7 +21,7 @@ model:
   loss: "categorical_crossentropy"
   optimizer: "adam"
   metrics: ["accuracy"]
-  epochs: 25
+  epochs: 3
   #batch_size: 32
   save_dir: model/trained.h5
 

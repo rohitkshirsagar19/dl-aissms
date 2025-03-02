@@ -1,0 +1,7 @@
+pandas
+numpy
+keras
+keras_preprocessing  # Corrected from kears_preprocessing
+joblib
+PyYAML
+streamlit
